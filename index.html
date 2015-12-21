@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>Interactive Resume</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+  </head>
+  <body ng-controller="IndexController">
+
+
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Aria Zavocki</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="portofolio">Portfolio</a></li>
+        <li><a ui-sref="resume">Resume</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div ui-view></div>
+    </div>
+
+   
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    
+    <script src="js/app.js"></script>
+    <script src="js/index.ctrl.js"></script>
+    <script src="js/home.ctrl.js"></script>
+    <script src="js/resume.ctrl.js"></script>
+    <script src="js/portfolio.ctrl.js"></script>
+
+
+  </body>
+</html>
